@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>4.9 ArrayList Traversals - AP CSA 题库</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../../css/brands.min.css" rel="stylesheet">
+        <link href="../../css/solid.min.css" rel="stylesheet">
+        <link href="../../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">AP CSA 题库</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href="../.." class="nav-link">首页</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Unit 1</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Unit%201/1.1%20Introduction%20to%20Algorithms%2C%20Programming%2C%20and%20Compilers/" class="dropdown-item">1.1 Introduction to Algorithms, Programming, and Compilers</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.2%20Variables%20and%20Data%20Types/" class="dropdown-item">1.2 Variables and Data Types</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.3%20Expressions%20and%20Output/" class="dropdown-item">1.3 Expressions and Output</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.4%20Assignment%20Statements%20and%20Input/" class="dropdown-item">1.4 Assignment Statements and Input</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.5%20Casting%20and%20Range%20of%20Variables/" class="dropdown-item">1.5 Casting and Range of Variables</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.6%20Compound%20Assignment%20Operators/" class="dropdown-item">1.6 Compound Assignment Operators</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.7%20Application%20Program%20Interface%20%28API%29%20and%20Libraries/" class="dropdown-item">1.7 Application Program Interface (API) and Libraries</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.8%20Documentation%20with%20Comments/" class="dropdown-item">1.8 Documentation with Comments</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.9%20Method%20Signatures/" class="dropdown-item">1.9 Method Signatures</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.10%20Calling%20Class%20Methods/" class="dropdown-item">1.10 Calling Class Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.11%20Math%20Class/" class="dropdown-item">1.11 Math Class</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.12%20Objects%3A%20Instances%20of%20Classes/" class="dropdown-item">1.12 Objects: Instances of Classes</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.13%20Object%20Creation%20and%20Storage%20%28Instantiation%29/" class="dropdown-item">1.13 Object Creation and Storage (Instantiation)</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.14%20Calling%20Instance%20Methods/" class="dropdown-item">1.14 Calling Instance Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%201/1.15%20String%20Manipulation/" class="dropdown-item">1.15 String Manipulation</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Unit 2</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Unit%202/2.1%20Algorithms%20with%20Selection%20and%20Repetition/" class="dropdown-item">2.1 Algorithms with Selection and Repetition</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.2%20Boolean%20Expressions/" class="dropdown-item">2.2 Boolean Expressions</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.3%20if%20Statements/" class="dropdown-item">2.3 if Statements</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.4%20Nested%20if%20Statements/" class="dropdown-item">2.4 Nested if Statements</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.5%20Compound%20Boolean%20Expressions/" class="dropdown-item">2.5 Compound Boolean Expressions</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.6%20Comparing%20Boolean%20Expressions/" class="dropdown-item">2.6 Comparing Boolean Expressions</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.7%20while%20Loops/" class="dropdown-item">2.7 while Loops</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.8%20for%20Loops/" class="dropdown-item">2.8 for Loops</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.9%20Implementing%20Selection%20and%20Iteration%20Algorithms/" class="dropdown-item">2.9 Implementing Selection and Iteration Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.10%20Implementing%20String%20Algorithms/" class="dropdown-item">2.10 Implementing String Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.11%20Nested%20Iteration/" class="dropdown-item">2.11 Nested Iteration</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%202/2.12%20Informal%20Run-Time%20Analysis/" class="dropdown-item">2.12 Informal Run-Time Analysis</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Unit 3</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../Unit%203/3.1%20Abstraction%20and%20Program%20Design/" class="dropdown-item">3.1 Abstraction and Program Design</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.2%20Impact%20of%20Program%20Design/" class="dropdown-item">3.2 Impact of Program Design</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.3%20Anatomy%20of%20a%20Class/" class="dropdown-item">3.3 Anatomy of a Class</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.4%20Constructors/" class="dropdown-item">3.4 Constructors</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.5%20Methods%3A%20How%20to%20Write%20Them/" class="dropdown-item">3.5 Methods: How to Write Them</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.6%20Methods%3A%20Passing%20and%20Returning%20References/" class="dropdown-item">3.6 Methods: Passing and Returning References</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.7%20Class%20Variables%20and%20Methods/" class="dropdown-item">3.7 Class Variables and Methods</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.8%20Scope%20and%20Access/" class="dropdown-item">3.8 Scope and Access</a>
+</li>
+                                    
+<li>
+    <a href="../../Unit%203/3.9%20this%20Keyword/" class="dropdown-item">3.9 this Keyword</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Unit 4</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../4.1%20Ethical%20and%20Social%20Issues%20Around%20Data%20Collection/" class="dropdown-item">4.1 Ethical and Social Issues Around Data Collection</a>
+</li>
+                                    
+<li>
+    <a href="../4.2%20Introduction%20to%20Using%20Data%20Sets/" class="dropdown-item">4.2 Introduction to Using Data Sets</a>
+</li>
+                                    
+<li>
+    <a href="../4.3%20Array%20Creation%20and%20Access/" class="dropdown-item">4.3 Array Creation and Access</a>
+</li>
+                                    
+<li>
+    <a href="../4.4%20Array%20Traversals/" class="dropdown-item">4.4 Array Traversals</a>
+</li>
+                                    
+<li>
+    <a href="../4.5%20Implementing%20Array%20Algorithms/" class="dropdown-item">4.5 Implementing Array Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../4.6%20Using%20Text%20Files/" class="dropdown-item">4.6 Using Text Files</a>
+</li>
+                                    
+<li>
+    <a href="../4.7%20Wrapper%20Classes/" class="dropdown-item">4.7 Wrapper Classes</a>
+</li>
+                                    
+<li>
+    <a href="../4.8%20ArrayList%20Methods/" class="dropdown-item">4.8 ArrayList Methods</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">4.9 ArrayList Traversals</a>
+</li>
+                                    
+<li>
+    <a href="../4.10%20Implementing%20ArrayList%20Algorithms/" class="dropdown-item">4.10 Implementing ArrayList Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../4.11%202D%20Array%20Creation%20and%20Access/" class="dropdown-item">4.11 2D Array Creation and Access</a>
+</li>
+                                    
+<li>
+    <a href="../4.12%202D%20Array%20Traversals/" class="dropdown-item">4.12 2D Array Traversals</a>
+</li>
+                                    
+<li>
+    <a href="../4.13%20Implementing%202D%20Array%20Algorithms/" class="dropdown-item">4.13 Implementing 2D Array Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../4.14%20Searching%20Algorithms/" class="dropdown-item">4.14 Searching Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../4.15%20Sorting%20Algorithms/" class="dropdown-item">4.15 Sorting Algorithms</a>
+</li>
+                                    
+<li>
+    <a href="../4.16%20Recursion/" class="dropdown-item">4.16 Recursion</a>
+</li>
+                                    
+<li>
+    <a href="../4.17%20Recursive%20Searching%20and%20Sorting/" class="dropdown-item">4.17 Recursive Searching and Sorting</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../4.8%20ArrayList%20Methods/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../4.10%20Implementing%20ArrayList%20Algorithms/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h3 id="topic-49-arraylist-traversals">Topic 4.9 — ArrayList Traversals</h3>
+<h4 id="1">1</h4>
+<p>The reviseList method is called with [3, 32, 33]. If it increments every odd number by 1, what is the final list?</p>
+<ul>
+<li>A) [3, 33]</li>
+<li>B) [3, 32, 33, 35]</li>
+<li>C) [32, 35]</li>
+<li>D) [32, 33, 35]</li>
+<li>E) [3, 32, 33]</li>
+</ul>
+<p>Answer: C</p>
+<h4 id="2">2</h4>
+<p>A loop removes all strings of length 3 from ["cat", "dog", "fish", "bat"] using i++. What is the result?</p>
+<ul>
+<li>A) ["fish"]</li>
+<li>B) ["dog", "fish"]</li>
+<li>C) ["cat", "dog", "bat"]</li>
+<li>D) ["dog", "fish", "bat"]</li>
+<li>E) ["fish", "bat"]</li>
+</ul>
+<p>Answer: D</p>
+<h4 id="3">3</h4>
+<p>What happens if you attempt to remove an element while traversing with an <strong>enhanced for loop</strong>?</p>
+<ul>
+<li>A) The element is successfully removed.</li>
+<li>B) The loop terminates immediately without error.</li>
+<li>C) A ConcurrentModificationException is thrown.</li>
+<li>D) The list size is updated correctly.</li>
+<li>E) An IndexOutOfBoundsException occurs.</li>
+</ul>
+<p>Answer: C</p>
+<h4 id="4">4</h4>
+<p>To safely remove elements while traversing, which object provides a remove() method that does <strong>not</strong> skip elements?</p>
+<ul>
+<li>A) Scanner</li>
+<li>B) File</li>
+<li>C) Iterator</li>
+<li>D) Integer</li>
+<li>E) String</li>
+</ul>
+<p>Answer: C</p>
+<h4 id="5">5</h4>
+<p>What is the correct way to iterate through an ArrayList from <strong>last to first</strong>?</p>
+<ul>
+<li>A) for (int i = 0; i &lt; list.size(); i++)</li>
+<li>B) for (E obj : list)</li>
+<li>C) for (int i = list.size() - 1; i &gt;= 0; i--)</li>
+<li>D) while (list.hasNext())</li>
+<li>E) for (int i = list.size(); i &gt; 0; i++)</li>
+</ul>
+<p>Answer: C</p>
+<h4 id="6">6</h4>
+<p>Which statement about a for-each loop variable in an ArrayList is true?</p>
+<ul>
+<li>A) Assigning a new value to the variable changes the value in the list.</li>
+<li>B) The variable holds a copy of the reference to the element.</li>
+<li>C) The variable can be used to change the ArrayList size.</li>
+<li>D) The variable is always an int representing the index.</li>
+<li>E) The variable must be static.</li>
+</ul>
+<p>Answer: B</p>
+<h4 id="7">7</h4>
+<p>When deleting with a standard for loop (i++), how do you avoid skipping elements?</p>
+<ul>
+<li>A) Use an enhanced for loop.</li>
+<li>B) Manually decrement the index i-- after removal.</li>
+<li>C) Clear the entire list first.</li>
+<li>D) Use a while loop that never increments.</li>
+<li>E) It is impossible.</li>
+</ul>
+<p>Answer: B</p>
+<h4 id="8">8</h4>
+<p>Which line correctly prints names using for (Address addr : list)?</p>
+<ul>
+<li>A) System.out.println(list[addr].getName());</li>
+<li>B) System.out.println(Address.getName());</li>
+<li>C) System.out.println(addr.getName());</li>
+<li>D) System.out.println(list.getName());</li>
+<li>E) System.out.println(addr);</li>
+</ul>
+<p>Answer: C</p>
+<h4 id="9">9</h4>
+<p>A method uses an enhanced for loop to find the max ID. What is the <strong>scope</strong> of the loop variable student?</p>
+<ul>
+<li>A) The entire class.</li>
+<li>B) The whole method.</li>
+<li>C) Only the block of the enhanced for loop.</li>
+<li>D) Any subclass.</li>
+<li>E) Only the main method.</li>
+</ul>
+<p>Answer: C</p>
+<h4 id="10">10</h4>
+<p>Why does the enhanced for loop <strong>not</strong> update a primitive value in ArrayList?</p>
+<ul>
+<li>A) ArrayLists are immutable.</li>
+<li>B) The variable is assigned a copy of the element; changing it does not affect the list.</li>
+<li>C) Primitives cannot be stored in ArrayLists.</li>
+<li>D) Wrapper classes do not allow modification.</li>
+<li>E) Integer objects are static.</li>
+</ul>
+<p>Answer: B</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
