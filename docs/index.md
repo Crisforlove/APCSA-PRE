@@ -1,6 +1,6 @@
 # AP CSA 题库导航
 
-这里是按单元与练习集整理的题库入口。
+这里是按单元与练习集整理的题库入口。(仅方便预览使用...由Cris创建xx)
 
 ## 单元目录
 - Unit 1
@@ -60,13 +60,3 @@
   - [4.15 Sorting Algorithms](Unit 4/4.15 Sorting Algorithms.md)
   - [4.16 Recursion](Unit 4/4.16 Recursion.md)
   - [4.17 Recursive Searching and Sorting](Unit 4/4.17 Recursive Searching and Sorting.md)
-
-## 练习集
-- [AP Computer Science A Unit 1 Comprehensive Question Set](AP Computer Science A Unit 1 Comprehensive Question Set.md)
-- [AP Computer Science A Unit 1 Practice Problems](AP Computer Science A Unit 1 Practice Problems.md)
-- [AP Computer Science A Unit 2 Practice Exam Questions](AP Computer Science A Unit 2 Practice Exam Questions.md)
-- [AP Computer Science A_ Unit 3 Class Creation Practice Set](AP Computer Science A_ Unit 3 Class Creation Practice Set.md)
-- [AP Computer Science A_ Unit 4 Data Collections Practice Set](AP Computer Science A_ Unit 4 Data Collections Practice Set.md)
-- [Java Unit 4 Data Sets and Arrays Practice Exam](Java Unit 4 Data Sets and Arrays Practice Exam.md)
-- [Mastering Selection and Iteration in Java Programming](Mastering Selection and Iteration in Java Programming.md)
-- [Unit 3 Mastery_ Class Creation and Object Behavior](Unit 3 Mastery_ Class Creation and Object Behavior.md)
